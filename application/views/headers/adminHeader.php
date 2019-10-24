@@ -42,7 +42,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Event Logs</a>
+                  <a class="nav-link" href="<?php echo site_url('admin/eventlog/');?>">Event Logs</a>
               </li>
           </ul>
           <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
