@@ -49,19 +49,16 @@ class TableRows extends RecursiveIteratorIterator {
 // echo "</table>";
 //
 
-$pdo = "uri:http://localhost/phpMyAdmin/db_structure.php?server=1&db=mbi";
-//Import class
-use MySQLHandler\MySQLHandler;
+if ($some_var == 'info')
+{
+        //log_message('error', 'Some variable did not contain a value.');
+}
+else
+{
+        //log_message('debug', 'Some variable was correctly set');
+}
 
-//Create MysqlHandler
-$mySQLHandler = new MySQLHandler($pdo, "log", array('username', 'userid'), \Monolog\Logger::DEBUG);
-
-//Create logger
-$logger = new \Monolog\Logger($context);
-$logger->pushHandler($mySQLHandler);
-
-//Now you can use the logger, and further attach additional information
-$logger->addWarning("This is a great message, woohoo!", array('username'  => 'John Doe', 'userid'  => 245));
+log_message('info', 'The purpose of some variable is to provide some value.');
 
 ?> 
 
