@@ -181,7 +181,12 @@ class CI_Log {
 		{
 			return FALSE;
 		}
-
+		// remove all DEBUG messages
+		if ( $this->_levels[$level] == 2 )
+		{
+		return FALSE;
+		
+		}
 		$filepath = $this->_log_path.'log-'.date('Y-m-d').'.'.$this->_file_ext;
 		$message = '';
 

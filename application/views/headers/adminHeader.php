@@ -47,7 +47,7 @@
           </ul>
           <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link"><?php echo ucwords($_SESSION["username"])?></a>
+              <a class="nav-link"><?php echo ucwords("Admin")?></a>
             </li>
               <li class="nav-item">
                   <a class="nav-link" href="<?php echo site_url('Login/logout');?>">Logout</a>
